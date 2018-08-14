@@ -145,7 +145,7 @@ app.post('/remove_attachment', async function (req, res) {
     let filename = req.body.type + "_" + req.body.intsnum + '.pdf';
     let key = req.body.type + '/' + filename;
 
-    var params = { Bucket: 'tracking.baireslogistic.com.ar', Key: key };
+    var params = { Bucket: 'xxxx.xxxxxxxx.xx.xx', Key: key };
     s3.deleteObject(params, async function (err, data) {
         if (err) {
             logger.error(err)
@@ -215,7 +215,7 @@ app.post('/upload', async function (req, res) {
 
 
     var base64data = new Buffer(data.data, 'binary');
-    var params = { Bucket: 'tracking.baireslogistic.com.ar', Key: key, Body: base64data };
+    var params = { Bucket: 'xxxx.xxxxxx.xxx.xx', Key: key, Body: base64data };
     s3.upload(params, async function (err, data) {
         if (err) {
             logger.error(err)

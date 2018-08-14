@@ -12,15 +12,15 @@ const CARPET_CUSTOM_INTERVENCION_TABLE = 'CARPET_CUSTOM_V2_INTERVENCION';
 
 
 module.exports = {
-    secret: "baireslogistic"
+    secret: "xxxxxxxxx"
 }
 
 var config = {
-    user: 'sa',
-    password: 'forward8',
-    server: '190.210.147.204',
+    user: 'xxx',
+    password: 'xxxxxxxxx',
+    server: 'xx.xx.xx.xx',
     //    server: '192.168.0.2',
-    database: 'CMEBAIRES',
+    database: 'DATABASE1',
     pool: {
         max: 10,
         min: 1,
@@ -34,11 +34,10 @@ var config = {
 
 
 var config1 = {
-    user: 'sa',
-    password: 'forward8',
-    server: '190.210.147.204',
-    //    server: '192.168.0.2',
-    database: 'BALOG2',
+    user: 'xx',
+    password: 'xxxxx',
+    server: 'xx.xx.xx.xx',
+    database: 'xxxxxx',
     pool: {
         max: 10,
         min: 1,
